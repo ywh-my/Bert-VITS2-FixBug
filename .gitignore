@@ -2,21 +2,21 @@
 *.pt
 
 bert/chinese-roberta-wwm-ext-large/*
-!bert/chinese-roberta-wwm-ext-large/
+!bert/chinese-roberta-wwm-ext-large/.gitkeep
 
 slm/wavlm-base-plus/*
-!slm/wavlm-base-plus/
+!slm/wavlm-base-plus/.gitkeep
 
 A1_pretrained_models/*
-!A1_pretrained_models/
+!A1_pretrained_models/.gitkeep
 
 A2_prepared_audios/*
-!A2_prepared_audios/
+!A2_prepared_audios/.gitkeep
 
 A4_model_output/*
-!A4_model_output/
+!A4_model_output/.gitkeep
 
 A5_finetuned_trainingout/*
-!A5_finetuned_trainingout/
+!A5_finetuned_trainingout/.gitkeep
 
 
