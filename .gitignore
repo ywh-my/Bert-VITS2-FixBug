@@ -1,5 +1,6 @@
 # 忽略模型文件
 *.pt
+*.pyc
 
 bert/chinese-roberta-wwm-ext-large/*
 !bert/chinese-roberta-wwm-ext-large/.gitkeep
@@ -20,4 +21,3 @@ A5_finetuned_trainingout/*
 !A5_finetuned_trainingout/.gitkeep
 
 
-__pycache__/
