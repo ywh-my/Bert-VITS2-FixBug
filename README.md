@@ -20,7 +20,7 @@ https://www.123pan.com/s/KLIzVv-pnMsh
 ```
 
 # 微调Demo演示
-微调案例请访问：[https://ywh-my.github.io/Bert-vits2-NoBug/](http://semanticexplore.com/bert_vits_demo)
+微调案例请访问：[Bert Vits Demo 演示 加载速度稍慢 请耐心等待](http://semanticexplore.com/bert_vits_demo)
 
 # 一、conda 环境安装
 ```
