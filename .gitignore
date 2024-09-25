@@ -20,3 +20,4 @@ A5_finetuned_trainingout/*
 !A5_finetuned_trainingout/.gitkeep
 
 
+__pycache__/
