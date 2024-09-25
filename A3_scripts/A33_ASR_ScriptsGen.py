@@ -134,8 +134,6 @@ class BaseASRModel(object):
 @click.option('--wavdir', type=str, help='Your Wav datadir')
 @click.option('--output_txt', type=str, help='Your Annotation text')
 @click.option('--lang', type=str, help='Yourlanguage')
-
-
 def biaozhu(wavdir, output_txt, lang):
     wavdir = Path(wavdir)
     

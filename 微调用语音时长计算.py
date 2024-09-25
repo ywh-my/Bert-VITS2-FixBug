@@ -20,6 +20,6 @@ def calculate_total_duration(txt_file):
     return total_duration
 
 # 示例用法
-txt_file = 'A5_finetuned_trainingout/gentle_girl/filelists/script.txt.cleaned.train'  # 替换为你的txt文件路径
+txt_file = 'A5_finetuned_trainingout/SSB0005_50/filelists/script.txt.cleaned.train'  # 替换为你的txt文件路径
 total_duration = calculate_total_duration(txt_file)
 print(f"Total duration: {total_duration:.2f} seconds, {total_duration / 60 :.2f} min  ")

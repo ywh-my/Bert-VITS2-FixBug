@@ -78,17 +78,11 @@ processor = AudioProcessor(
 )
 
 import click
+@click.command()
+@click.option('--script', type=str, help='Your txt.cleaned.train')
+def melspec_gen(script):
 
-def melspec_gen():
-
-    
-
-    pass
-
-
-if __name__ == "__main__":
-
-    with open("A5_finetuned_trainingout/SSB0005_50/filelists/script.txt.cleaned.train", "r") as f:
+    with open(script, "r") as f:
         filepaths = [line.split("|")[0] for line in f]  # 取每一行的第一部分作为audiopath
 
     # 使用多进程处理
@@ -96,3 +90,10 @@ if __name__ == "__main__":
         with tqdm(total=len(filepaths)) as pbar:
             for i, _ in enumerate(pool.imap_unordered(processor.process_audio, filepaths)):
                 pbar.update()
+
+    pass
+
+
+if __name__ == "__main__":
+    melspec_gen()
+    

@@ -135,16 +135,17 @@ logging.basicConfig(
     level=logging.INFO,  # 设置日志等级为 INFO 及以上
     format='%(asctime)s - %(levelname)s - %(message)s'  # 设置日志格式
 )
+from pathlib import Path
 if __name__=="__main__":
     ## 一、 超参数加载。
-    hps = get_hparams_from_file(config_path="A5_finetuned_trainingout/SSB0005_50/config.json")
+    hps = get_hparams_from_file(config_path="A5_finetuned_trainingout/gentle_girl/config.json")
     device = "cuda:0"
-    model_path = "A5_finetuned_trainingout/SSB0005_50/models/G_8000.pth"
+    model_path = "A5_finetuned_trainingout/gentle_girl/models/G_8000.pth"
     ## 
-    speaker_name  = "SSB0005_50"
+    speaker_name  = Path(model_path).parts[-3]
     language = "ZH"
     length_scale = 1.2
-    infer_text = "今夜的月光如此清亮，不做些什么真是浪费。随我一同去月下漫步吧，不许拒绝"
+    infer_text = "根据我们上面的描述，我们的目标是希望获取一组相对最优的参数来作为模型的初始化参数"
     infer_id = 0
     sdp_ratio=0.4
     output_path = f'A4_model_output/{speaker_name}_{infer_id}.wav'
