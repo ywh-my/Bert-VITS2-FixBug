@@ -1,0 +1,22 @@
+# 忽略模型文件
+*.pt
+
+bert/chinese-roberta-wwm-ext-large/*
+!bert/chinese-roberta-wwm-ext-large/
+
+slm/wavlm-base-plus/*
+!slm/wavlm-base-plus/
+
+A1_pretrained_models/*
+!A1_pretrained_models/
+
+A2_prepared_audios/*
+!A2_prepared_audios/
+
+A4_model_output/*
+!A4_model_output/
+
+A5_finetuned_trainingout/*
+!A5_finetuned_trainingout/
+
+
