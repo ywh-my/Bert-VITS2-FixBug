@@ -310,3 +310,8 @@ python A3_scripts/A34_deleteModels.py
 A37-ffmpeg.py
 A38-VAD_batch.py
 ```
+
+## 5.3 可以一键启动全部流程.只需放好 A2_prepared_audios/gentle_girl 数据
+```bash
+A40_一键启动微调pipeline.sh
+```
