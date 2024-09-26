@@ -315,3 +315,6 @@ A38-VAD_batch.py
 ```bash
 A40_一键启动微调pipeline.sh
 ```
+
+## 感谢所有贡献者作出的努力
+GitYesm
