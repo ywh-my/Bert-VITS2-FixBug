@@ -24,6 +24,8 @@ https://www.123pan.com/s/KLIzVv-pnMsh
 # 微调Demo演示
 微调案例请访问：[Bert Vits Demo 演示 加载速度稍慢 请耐心等待](http://semanticexplore.com/bert_vits_demo)
 
+![模型原理简介](docs/011.png)
+
 # 一、conda 环境安装
 ```
 # 推荐先安装torch torchaudio
