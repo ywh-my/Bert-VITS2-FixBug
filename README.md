@@ -2,6 +2,9 @@
 原始项目:[Bert-VITS2]([https://github.com](https://github.com/fishaudio/Bert-VITS2)。
 本文是一个改进版本的BERT VITS2项目使用教程，尽可能去除了bug。希望各位群策群力，提出issue，尽量减少bug，能快速开始微调。
 有兴趣交流语音技术的同学可以加入QQ群 742922321。
+
+![QQ群](/docs/语音学习群.png)
+
 Bert vits2语音合成项目已经停止维护，因此这最后一版本代码有必要分享一个部署经验。
 Bert vits2项目的底模模型主要是bert +vits，训练数据主要是原神角色语音。微调训练的时候主要是微调vits模型，冻结bert模型。不包含任何speaker encoder和emotional encoder。
 bert模型负责产生文本编码向量Ht。vits模型负责合成语音 wav = vits(Ht)。
