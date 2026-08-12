@@ -1,3 +1,5 @@
+
+
 # 前言
 原始项目:[Bert-VITS2]([https://github.com](https://github.com/fishaudio/Bert-VITS2)。
 本文是一个改进版本的BERT VITS2项目使用教程，尽可能去除了bug。希望各位群策群力，提出issue，尽量减少bug，能快速开始微调。
@@ -171,8 +173,8 @@ A1_pretrained_models
 ## A3_scripts/asr_model_list.py
 def get_model02():
     recognizer = sherpa_onnx.OfflineRecognizer.from_paraformer(
-            paraformer="A1模型文件/sherpa-onnx-paraformer-zh-2023-03-28/model.onnx",
-            tokens="A1模型文件/sherpa-onnx-paraformer-zh-2023-03-28/tokens.txt",
+            paraformer="A1_pretrained_models/sherpa-onnx-paraformer-zh-2023-03-28/model.onnx",
+            tokens="A1_pretrained_models/sherpa-onnx-paraformer-zh-2023-03-28/tokens.txt",
             num_threads=1,
             sample_rate=16000,
             feature_dim=80,
